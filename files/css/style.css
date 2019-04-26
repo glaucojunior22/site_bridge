@@ -2189,6 +2189,17 @@ footer {
     margin-right: 0;
 }
 
+.img-parceiros img{
+	transition: filter .2s ease-in-out;
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(100%); /* FF 35+ */
+}
+
+.img-parceiros img:hover{
+	-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(0%); /* FF 35+ */
+}
+
 .easy-opener-close {
     left: 110% !important;
 }
