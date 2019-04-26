@@ -2159,24 +2159,6 @@ div .socialmedia-widget:first-child { margin: 0; }
 
 /* home
 ------------------------------------------------*/
-#about {
-    min-height: 80vh;
-}
-
-.videobg-section {
-    min-height: 100vh;
-}
-
-.conheca-button {
-    margin-top: 60vh;
-}
-
-/* footer
-------------------------------------------------*/
-footer {
-    background: #62418b;
-}
-
 #parceiros {
     background-color: #dbdede;
 }
@@ -2202,6 +2184,52 @@ footer {
 
 .easy-opener-close {
     left: 110% !important;
+}
+
+#about {
+    min-height: 80vh;
+}
+
+.videobg-section {
+    min-height: 100vh;
+}
+
+.conheca-button {
+    margin-top: 60vh;
+}
+
+/* SVG FILTER */
+.defs-only {
+	position: absolute;
+	height: 0; width: 0;
+	overflow: none;
+	left: -100%;
+}
+
+.imgoverlay a img{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+.imgoverlay{
+	filter: url(#purple-filter);
+	-webkit-filter: url(#purple-filter);
+}
+
+.imgoverlay:hover{
+	filter: none;
+	-webkit-filter: none;
+}
+
+.imgoverlay:hover a img{
+	filter: none;
+	-webkit-filter:none;
+}
+
+/* footer
+------------------------------------------------*/
+footer {
+    background: #62418b;
 }
 
 @media only screen and (max-width: 760px) {
